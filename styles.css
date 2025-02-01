@@ -1,5 +1,11 @@
 .container {
     display: flex;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border: solid;
+    border-color: black;
+
 }
 .gridbox {   
     height: 100px;

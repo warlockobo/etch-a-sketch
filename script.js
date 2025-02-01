@@ -53,3 +53,4 @@ container.appendChild(box16);
 
 console.log(container);
 
+container.style.color = "black";
