@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+}
+.gridbox {   
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border: solid;
+    border-color: black;
+}
