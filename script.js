@@ -17,6 +17,7 @@ function gridCreate (size) {
         gridBox.classList.add("gridBox");
         gridBox.style.width = `${boxSize}px`;
         gridBox.style.height = `${boxSize}px`;
+        gridBox.style.opacity = 0.1;
         container.appendChild(gridBox);
     }
 
@@ -35,10 +36,14 @@ function gridCreate (size) {
     });
   }
 
+resizeButton.addEventListener ("mouseover", () => {
+    resizeButton.style.backgroundColor = colorRandomization();
+})
+
 gridCreate(16);
 
 function newGrid() {
-  let gridSize = prompt("How many squares would you like per side?");
+  let gridSize = prompt("How many squares per side? (Max 100, Min 1)");
   if (gridSize <= 100 && gridSize > 0){
     gridCreate(gridSize);
   }
@@ -49,4 +54,4 @@ function newGrid() {
 
 resizeButton.addEventListener("click", () => {
     newGrid();
-  })
+  });
