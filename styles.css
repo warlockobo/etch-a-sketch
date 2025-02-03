@@ -1,10 +1,24 @@
 body {
-
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
 }
 .container {
-    
     display: flex;
-
+    height: 720px;
+    width: 720px;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-.gridbox {   
+.gridBox {   
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    transition: background-color 0.3s, opacity 0.3s;
 }
