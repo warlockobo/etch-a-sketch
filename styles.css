@@ -23,6 +23,33 @@ body {
 }
 
 .resize {
-    margin: 5px;
-    
+    margin: 10px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #c7bfdb;
+    font-size: 16px;
+}
+
+#sizeText {
+    margin-right: 5px;
+}
+
+#sizeInput {
+    background-color: #f0f0f0;
+    width: 50px;
+    height: 20px;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+#sizeLayout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+}
+
+.header {
+    font-family: 'Roboto';
 }

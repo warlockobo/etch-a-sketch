@@ -40,10 +40,15 @@ resizeButton.addEventListener ("mouseover", () => {
     resizeButton.style.backgroundColor = colorRandomization();
 })
 
+function getValue() {
+  const inputValue = document.querySelector("#sizeInput").value;
+  return inputValue;
+}
+
 gridCreate(16);
 
 function newGrid() {
-  let gridSize = prompt("How many squares per side? (Max 100, Min 1)");
+  let gridSize = getValue();
   if (gridSize <= 100 && gridSize > 0){
     gridCreate(gridSize);
   }
