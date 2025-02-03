@@ -1,4 +1,5 @@
 const container = document.querySelector(".container");
+const resizeButton = document.querySelector(".resize");
 
 function colorRandomization() {
     const r = Math.floor(Math.random() * 256);
@@ -35,3 +36,17 @@ function gridCreate (size) {
   }
 
 gridCreate(16);
+
+function newGrid() {
+  let gridSize = prompt("How many squares would you like per side?");
+  if (gridSize <= 100 && gridSize > 0){
+    gridCreate(gridSize);
+  }
+  else {
+    alert("Value must be between 1 and 100.");
+  }
+}
+
+resizeButton.addEventListener("click", () => {
+    newGrid();
+  })
